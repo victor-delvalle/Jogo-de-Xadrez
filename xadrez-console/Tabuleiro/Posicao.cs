@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tabuleiro
+namespace tabuleiro
 {
     class Posicao
     {
-        public int linha {  get; set; }
-        public int coluna {  get; set; }
-        public Posicao (int linha, int coluna)
+        public int linhas {  get; set; }
+        public int colunas {  get; set; }
+        public Posicao (int linhas, int colunas)
         {
-            this.linha = linha;
-            this.coluna = coluna;
+            this.linhas = linhas;
+            this.colunas = colunas;
         }
 
         public override string ToString()
         {
-            return linha + ", " + coluna;
+            return linhas + ", " + colunas;
         }
     }
 }
